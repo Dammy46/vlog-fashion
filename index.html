@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fashion</title>
-    <link rel="stylesheet" href="styles.css" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Home - Fashion" />
     <meta property="og:site_name" content="Fashion" />
@@ -12,13 +11,32 @@
       property="og:description"
       content="Discover the latest fashion news, runway shows, and designer spotlights that define the industry's ever-evolving landscape. From iconic fashion icons to emerging talents, our website celebrates the individuals who shape the world of fashion and modeling."
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .clip-path {
+        clip-path: circle(50% at 50% 50%);
+      }
+    </style>
   </head>
   <body>
     <div
-      class="relative bg-transparent bg-gradient-to-r from-orange-100 to-orange-200"
+      class="relative bg-transparent bg-gradient-to-r from-slate-600 to-slate-900"
     >
       <div
-        class="absolute inset-0 bg-[url('images/fashion_bg.jpg')] opacity-75 mix-blend-overlay bg-no-repeat bg-cover bg-fixed"
+        class="absolute inset-0 bg-[url('https://websitedemos.net/fashion-lifestyle-02/wp-content/uploads/sites/427/2020/01/kara-contactbanner.jpg')] opacity-75 mix-blend-overlay bg-no-repeat bg-cover bg-fixed"
       ></div>
       <div>
         <header class="absolute inset-x-0 top-0 z-50">
@@ -39,7 +57,7 @@
             <div class="flex lg:hidden">
               <button
                 type="button"
-                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
               >
                 <span class="sr-only">Open main menu</span>
                 <svg
@@ -58,20 +76,28 @@
                 </svg>
               </button>
             </div>
-            <div class="hidden lg:flex lg:gap-x-12">
-              <a href="#" class="text-sm font-semibold leading-6 text capitalize"
+            <div class="hidden lg:flex lg:gap-x-12 text-white">
+              <a
+                href="#"
+                class="text-sm font-semibold leading-6 text capitalize"
                 >home</a
               >
-              <a href="#" class="text-sm font-semibold leading-6 text capitalize"
+              <a
+                href="blog.html"
+                class="text-sm font-semibold leading-6 text capitalize"
                 >blog</a
               >
-              <a href="#" class="text-sm font-semibold leading-6 text capitalize"
+              <a
+                href="hacks.html"
+                class="text-sm font-semibold leading-6 text capitalize"
                 >hacks</a
               >
-              <a href="#" class="text-sm font-semibold leading-6 text capitalize"
+              <a
+                href="#videos"
+                class="text-sm font-semibold leading-6 text capitalize"
                 >videos</a
               >
-              <a href="#" class="text-sm font-semibold leading-6 capitalize"
+              <a href="contact.html" class="text-sm font-semibold leading-6 capitalize"
                 >Contact</a
               >
             </div>
@@ -87,11 +113,11 @@
                 <a href="#" class="-m-1.5 p-1.5">
                   <span class="sr-only">Your Company</span>
                   <img
-                  width="40"
-                  height="40"
-                  src="https://img.icons8.com/ios/50/000000/octaedro.png"
-                  alt="octaedro"
-                />
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/ios/50/000000/octaedro.png"
+                    alt="octaedro"
+                  />
                 </a>
                 <button
                   type="button"
@@ -115,37 +141,34 @@
                 </button>
               </div>
               <div class="mt-6 flow-root">
-                <div class="-my-6 ">
+                <div class="-my-6">
                   <div class="space-y-2 py-6">
                     <a
-                      href="#"
+                      href="index.html"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 capitalize"
                       >home</a
                     >
                     <a
-                      href="#"
+                      href="blog.html"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 capitalize"
                       >blog</a
                     >
                     <a
-                      href="#"
+                      href="hacks.html"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 capitalize"
                       >hacks</a
                     >
                     <a
-                      href="#"
+                      href="#videos"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 capitalize"
                       >video</a
                     >
                     <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 capitalize"
-                    >contact</a
-                  >
+                      href="contact.html"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 capitalize"
+                      >contact</a
+                    >
                   </div>
-                
-                   
-             
                 </div>
               </div>
             </div>
@@ -153,18 +176,24 @@
         </header>
 
         <div class="relative isolate px-6 pt-14 lg:px-8">
-          <div class="mx-auto sm:py-48 flex flex-col lg:flex-row md:flex-row justify-between relative">
+          <div
+            class="mx-auto sm:py-48 flex flex-col lg:flex-row md:flex-row justify-between relative"
+          >
             <div class="lg:w-6/12 md:w-6/12 pt-[4rem] lg:pt-0 md:pt-0">
               <h2
-                class="font-semibold lg:text-8xl text-6xl break-words capitalize"
+                class="font-semibold lg:text-8xl text-6xl break-words capitalize text-white"
               >
                 Elegance Unveiled
               </h2>
             </div>
             <div class="lg:w-6/12 md:w-6/12 flex">
-              <div class="lg:ml-96 pt-64 flex flex-col justify-end items-end lg:block md:block">
-                <div class="w-20 border-t-2 border-black"></div>
-                <p class="mt-6 text-right lg:text-justify md:text-justify">
+              <div
+                class="lg:ml-[8rem] pt-64 flex flex-col justify-end items-end lg:block md:block"
+              >
+                <div class="w-20 border-t-2 border-white"></div>
+                <p
+                  class="mt-6 lg:mb-0 md:mb-0 mb-6 text-right lg:text-justify md:text-justify text-white"
+                >
                   we embark on a captivating journey into the enchanting realm
                   of haute couture and runway glamour. Delve into the
                   ever-evolving world of fashion, where creativity and
@@ -179,181 +208,358 @@
     <div class="py-28 px-10 bg-white">
       <div class="max-w-screen-xl mx-auto">
         <h5 class="uppercase text-base text-center mb-8">
-         achievements & awards
+          achievements & awards
         </h5>
-        <div class="flex flex-col lg:flex-row gap-8 justify-between flex-wrap items-center mb-8 lg:mb-16">
-    <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-8.svg" alt="">
-    <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-10.svg" alt="">
-    <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-13.svg" alt="">
-    <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-7.svg " alt="">
-        
+        <div
+          class="flex flex-col lg:flex-row gap-8 justify-between flex-wrap items-center mb-8 lg:mb-16"
+        >
+          <img
+            src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-8.svg"
+            alt=""
+          />
+          <img
+            src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-10.svg"
+            alt=""
+          />
+          <img
+            src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-13.svg"
+            alt=""
+          />
+          <img
+            src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-7.svg "
+            alt=""
+          />
         </div>
-        <div class="flex flex-col lg:flex-row gap-8 justify-around flex-wrap items-center">
-          <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-featured-in-logo-1.svg" alt="">
-          <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-14.svg" alt="">
-          <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-featured-in-logo-1.svg" alt="">
+        <div
+          class="flex flex-col lg:flex-row gap-8 justify-around flex-wrap items-center"
+        >
+          <img
+            src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-featured-in-logo-1.svg"
+            alt=""
+          />
+          <img
+            src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/logo-14.svg"
+            alt=""
+          />
+          <img
+            src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-featured-in-logo-1.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
     <div
-      class="relative bg-transparent bg-gradient-to-r from-orange-200 to-orange-100"
+      class="relative bg-transparent bg-gradient-to-r from-slate-600 to-slate-900"
     >
       <div
         class="absolute inset-0 bg-[url('images/bg-overlay.jpg')] opacity-75 mix-blend-overlay bg-no-repeat bg-cover bg-fixed"
       ></div>
       <div>
-        <div class="relative isolate max-w-screen-xl mx-auto px-6 py-16 lg:px-8">
+        <div
+          class="relative isolate max-w-screen-xl mx-auto px-6 py-16 lg:px-8 text-white"
+        >
           <div class="mx-auto relative">
-            <h5 class="uppercase text-2xl text-center mb-4">
-              recent blogs
-             </h5>
-             <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequatur saepe deleniti laboriosam!</p>
-             <div class="flex flex-wrap items-center gap-14 justify-center lg:justify-between mt-12">
-              <div class="max-w-xl flex flex-col gap-y-2">
-                <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-1.jpg" alt="">
-                <span class="capitalize text-red-500 ">Urban Fashion</span>
-                <h4 class="text-xl uppercase font-serif">Lorem ipsum dolor sit amet consectetur.</h4>
-              </div>
-              <div class="max-w-xl flex flex-col gap-y-2">
-                <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-2.jpg" alt="">
-                <span class="capitalize text-red-500 ">Best For Winter</span>
-                <h4 class="text-xl uppercase font-serif">Lorem ipsum dolor sit amet consectetur.</h4>
-              </div>
-              <div class="max-w-xl flex flex-col gap-y-2">
-                <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-3.jpg" alt="">
-                <span class="capitalize text-red-500 ">Trendy Work Wear</span>
-                <h4 class="text-xl uppercase font-serif">Lorem ipsum dolor sit amet consectetur.</h4>
-              </div>
-              <div class="max-w-xl flex flex-col gap-y-2">
-                <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-4.jpg" alt="">
-                <span class="capitalize text-red-500 ">Casual Summer Wear</span>
-                <h4 class="text-xl uppercase font-serif">Lorem ipsum dolor sit amet consectetur.</h4>
-              </div>
-          
-             </div>
-  
+            <h5 class="uppercase text-2xl text-center mb-4">recent blogs</h5>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum consequatur saepe deleniti laboriosam!
+            </p>
+            <div
+              class="flex flex-wrap items-center gap-14 justify-center lg:justify-evenly mt-12"
+            >
+              <a class="max-w-[29rem] flex flex-col gap-y-2" href="blog.html">
+                <img
+                  src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-1.jpg"
+                  alt=""
+                />
+                <span class="capitalize text-red-500">Urban Fashion</span>
+                <h4 class="text-xl uppercase font-serif">
+                  Unveiling the Essence of Urban Fashion.
+                </h4>
+              </a>
+              <a class="max-w-[29rem] flex flex-col gap-y-2" href="blog.html">
+                <img
+                  src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-2.jpg"
+                  alt=""
+                />
+                <span class="capitalize text-red-500">Best For Winter</span>
+                <h4 class="text-xl uppercase font-serif">
+                  Unveiling the Best Cold-Weather Delights and Essentials.
+                </h4>
+              </a>
+              <a class="max-w-[29rem] flex flex-col gap-y-2" href="blog.html">
+                <img
+                  src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-3.jpg"
+                  alt=""
+                />
+                <span class="capitalize text-red-500">Trendy Work Wear</span>
+                <h4 class="text-xl uppercase font-serif">
+                  Elevate Your Work Wardrobe with Trendy Workwear.
+                </h4>
+              </a>
+              <a class="max-w-[29rem] flex flex-col gap-y-2" href="a">
+                <img
+                  src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-shop-img-4.jpg"
+                  alt=""
+                />
+                <span class="capitalize text-red-500">Casual Summer Wear</span>
+                <h4 class="text-xl uppercase font-serif">
+                  Effortless Casual Summer Wear Ideas.
+                </h4>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div>
-      <div class="relative isolate max-w-screen-xl mx-auto px-6 pt-14 lg:pb-[19rem] md:pb-[19rem] pb-[6rem] lg:px-8">
-        <h4 class="font-serif uppercase text-4xl mb-16 text-center lg:text-lft">fashion hacks</h4>
-        <div class="flex flex-wrap justify-center lg:justify-between md:justify-between items-center gap-[30px]">
+      <div
+        class="relative isolate max-w-screen-xl mx-auto px-6 pt-14 lg:pb-[19rem] md:pb-[19rem] pb-[6rem] lg:px-8"
+      >
+        <h4 class="font-serif uppercase text-4xl mb-16 text-center lg:text-lft">
+          fashion hacks
+        </h4>
+        <div
+          class="flex flex-wrap justify-center lg:justify-between md:justify-between items-center gap-[30px]"
+        >
           <div class="max-w-xs flex flex-col gap-[.5rem] lg:gap-4">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-tips-img-1.jpg" alt="">
-            <h5 class="uppercase text-xl">Transparent Rain Coat sed consectetur</h5>
-            <span class="uppercase text-red-500 tracking-widest"><a href="">read more</a></span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-tips-img-1.jpg"
+              alt=""
+            />
+            <h5 class="uppercase text-xl">
+              Transparent Rain Coat sed consectetur
+            </h5>
+            <span class="uppercase text-red-500 tracking-widest"
+              ><a href="hacks.html">read more</a></span
+            >
           </div>
           <div class="max-w-xs flex flex-col gap-4">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-tips-img-2.jpg" alt="">
-            <h5 class="uppercase text-xl">Flawless party makeup laoreet diam amet urna</h5>
-            <span class="uppercase text-red-500 tracking-widest"><a href="">read more</a></span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-tips-img-2.jpg"
+              alt=""
+            />
+            <h5 class="uppercase text-xl">
+              Flawless party makeup laoreet diam amet urna
+            </h5>
+            <span class="uppercase text-red-500 tracking-widest"
+              ><a href="hacks.html">read more</a></span
+            >
           </div>
           <div class="max-w-xs flex flex-col gap-4">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-tips-img-3.jpg" alt="">
-            <h5 class="uppercase text-xl">Black Dress By Wangoon Nisl bibendum</h5>
-            <span class="uppercase text-red-500 tracking-widest"><a href="">read more</a></span>
+            <img
+              src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-tips-img-3.jpg"
+              alt=""
+            />
+            <h5 class="uppercase text-xl">
+              Black Dress By Wangoon Nisl bibendum
+            </h5>
+            <span class="uppercase text-red-500 tracking-widest"
+              ><a href="hacks.html">read more</a></span
+            >
           </div>
-          
         </div>
       </div>
     </div>
-    <div class="relative bg-transparent bg-gradient-to-r from-orange-200 to-orange-100">
-      <div class="relative isolate max-w-screen-xl mx-auto px-6 px-[1rem] py-14 lg:px-8">
-       <div class="border-4 border-orange-200 bg-white lg:px-14 lg:py-9 md:px-14 md:py-9 p-[1.5rem] flex justify-between items-center gap-20 lg:-mt-[15rem] md:-mt-[15rem]">
-          <div class="clip-path lg:max-w-[250px] max-w-[150px] lg:block md:block hidden">
-            <img src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fG1vZGVsJTIwYW5kJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+    <div
+      class="relative bg-transparent bg-gradient-to-r from-slate-600 to-slate-900 text-white"
+    >
+      <div
+        class="relative isolate max-w-screen-xl mx-auto px-6 px-[1rem] py-14 lg:px-8"
+      >
+        <div
+          class="border-4 border-slate-600 bg-white lg:px-14 lg:py-9 md:px-14 md:py-9 p-[1.5rem] flex justify-between items-center gap-20 lg:-mt-[15rem] md:-mt-[15rem]"
+        >
+          <div
+            class="clip-path lg:max-w-[250px] max-w-[150px] lg:block md:block hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fG1vZGVsJTIwYW5kJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
           </div>
           <div class="flex-1">
-            <h3 class="capitalize text-[2rem] lg:text-5xl md:text-4xl font-serif ">Subscribe Mailing List</h3>
-            <p class="mt-2 text-base capitalize">Sign up and get all the latest, ad-free fashion tips, special deals and news sent to your inbox.</p>
-            <input type="email" placeholder="Your email please" class="w-full border p-4 focus:ring-none focus:outline-none mt-12">
-            <button class="uppercase border border-black py-2 px-6 mt-4 hover:bg-black hover:text-white transition ease-in-out w-full lg:w-auto md:w-auto">subscribe</button>
+            <h3
+              class="capitalize text-[2rem] lg:text-5xl md:text-4xl font-serif text-black"
+            >
+              Subscribe Mailing List
+            </h3>
+            <p class="mt-2 text-base capitalize text-black">
+              Sign up and get all the latest, ad-free fashion tips, special
+              deals and news sent to your inbox.
+            </p>
+            <input
+              type="email"
+              placeholder="Your email please"
+              class="w-full border p-4 focus:ring-none focus:outline-none mt-12"
+            />
+            <button
+              class="uppercase border text-black border-black py-2 px-6 mt-4 hover:bg-black hover:text-white transition ease-in-out w-full lg:w-auto md:w-auto"
+            >
+              subscribe
+            </button>
           </div>
-       </div>
-       <div class="mt-[13rem]">
-        <div class="flex justify-center lg:justify-between items-center flex-col lg:flex-row gap-8">
-          <h3 class="uppercase font-serif text-2xl lg:text-4xl md:text-4xl">latest videos</h3>
-          <button class="inline-flex uppercase border border-black py-2 px-6 items-center transition tracking-widest ease-in-out gap-[20px]"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="youtube-play"/>subscribe channel</button>
         </div>
-        <div class="flex flex-wrap justify-center items-center lg:justify-between mt-[7rem] gap-[30px] text-center lg:text-left">
-          <div class="max-w-xl flex flex-col gap-y-[1rem]">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-1.jpg" alt="">
+        <div class="mt-[13rem]" id="videos">
+          <div
+            class="flex justify-center lg:justify-between items-center flex-col lg:flex-row gap-8 pt-[1.5rem]"
+          >
+            <h3 class="uppercase font-serif text-2xl lg:text-4xl md:text-4xl">
+              latest videos
+            </h3>
+            <button
+              class="inline-flex uppercase border border-white py-2 px-6 items-center transition tracking-widest ease-in-out gap-[20px]"
+            >
+            subscribe channel
+            </button>
+          </div>
+          <div
+            class="flex flex-wrap justify-center items-center lg:justify-between mt-[7rem] gap-[30px] text-center lg:text-left"
+          >
+            <div class="max-w-xl flex flex-col gap-y-[1rem]">
+              <img
+                src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-1.jpg"
+                alt=""
+              />
 
-            <h4 class="text-xl uppercase font-serif">Lorem ipsum dolor sit amet consectetur.</h4>
-          </div>
-          <div class="max-w-xl flex flex-col gap-y-[1rem]">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-2.jpg" alt="">
+              <h4 class="text-xl uppercase font-serif">
+                Embracing Radiant Summer Vibes.
+              </h4>
+            </div>
+            <div class="max-w-xl flex flex-col gap-y-[1rem]">
+              <img
+                src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-2.jpg"
+                alt=""
+              />
 
-            <h4 class="text-xl uppercase font-serif">Lorem ipsum dolor sit amet consectetur.</h4>
+              <h4 class="text-xl uppercase font-serif">
+                Nostalgic Glamour for Modern Fashionistas.
+              </h4>
+            </div>
+          </div>
+          <div
+            class="flex flex-wrap justify-center items-center lg:justify-between mt-[4rem] gap-[25px] text-center lg:text-left"
+          >
+            <div class="max-w-xs flex flex-col gap-4">
+              <img
+                src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-3.jpg"
+                alt=""
+              />
+              <h5 class="uppercase text-xl">
+                Where Comfort Meets Unparalleled Style.
+              </h5>
+            </div>
+            <div class="max-w-xs flex flex-col gap-4">
+              <img
+                src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-4.jpg"
+                alt=""
+              />
+              <h5 class="uppercase text-xl">
+                Unleashing Your Inner Bold and Beautiful.
+              </h5>
+            </div>
+            <div class="max-w-xs flex flex-col gap-4">
+              <img
+                src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-5.jpg"
+                alt=""
+              />
+              <h5 class="uppercase text-xl">
+                The Art of Simplicity and Elegance.
+              </h5>
+            </div>
+          </div>
+          <div
+            class="flex justify-center lg:justify-between items-center flex-col lg:flex-row gap-8 mt-[4rem]"
+          >
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/000000/octaedro.png"
+              alt="octaedro"
+            />
+            <button
+              class="inline-flex uppercase border border-white py-2 px-6 items-center gap-[20px]"
+            >
+             follow on instagram
+            </button>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center items-center lg:justify-between mt-[4rem] gap-[25px] text-center lg:text-left">
-          <div class="max-w-xs flex flex-col gap-4">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-3.jpg" alt="">
-            <h5 class="uppercase text-xl">Lorem ipsum dolor sit amet.</h5>
-    
-          </div>
-          <div class="max-w-xs flex flex-col gap-4">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-4.jpg" alt="">
-            <h5 class="uppercase text-xl">Lorem ipsum dolor sit amet.</h5>
-    
-          </div>
-          <div class="max-w-xs flex flex-col gap-4">
-            <img src="https://websitedemos.net/fashion-influencer-03/wp-content/uploads/sites/884/2021/04/fashion-influencer-video-img-5.jpg" alt="">
-            <h5 class="uppercase text-xl">Lorem ipsum dolor sit amet.</h5>
-    
-          </div>
+      </div>
+    </div>
+    <div
+      class="relative isolate max-w-screen-xl mx-auto px-6 px-[1rem] pt-14 pb-12 lg:px-8 bg-white"
+    >
+      <div class="lg:w-[50%] mx-auto">
+        <div
+          class="flex justify-center items-center flex-col gap-[30px] text-center"
+        >
+          <h3
+            class="uppercase text-xl lg:text-4xl md:text-4xl font-serif lg:leading-[60px] md:leading-[55px]"
+          >
+            Working With Passionate Fashion Brands And People.
+          </h3>
+          <a href="contact.html">
+            <button
+            class="uppercase border border-black py-2 px-6 mt-4 hover:bg-black hover:text-white transition ease-in-out"
+          >
+            let's talk
+          </button>
+          </a>
         </div>
-        <div class="flex justify-center lg:justify-between items-center flex-col lg:flex-row gap-8 mt-[4rem]">
-          <img
+      </div>
+      <div
+        class="flex justify-center lg:justify-between items-center flex-col lg:flex-row mt-[5rem] gap-[50px]"
+      >
+        <img
           width="50"
           height="50"
           src="https://img.icons8.com/ios/50/000000/octaedro.png"
           alt="octaedro"
         />
-          <button class="inline-flex uppercase border border-black py-2 px-6 items-center gap-[20px]"><img width="20" height="20" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>follow on instagram</button>
+        <div
+          class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between items-center gap-[20px]"
+        >
+          <p class="capitalize"><a href="index.html">home</a></p>
+          <p class="capitalize"><a href="blog.html">blog</a></p>
+          <p class="capitalize"><a href="hacks.html">hacks</a></p>
+          <p class="capitalize"><a href="#videos">videos</a></p>
+          <p class="capitalize"><a href="contact.html">Contact</a></p>
         </div>
-
-       </div>
+        <div
+          class="flex justify-center lg:justify-between items-center gap-[35px]"
+        >
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios-glyphs/30/youtube-play.png"
+            alt="youtube-play"
+          />
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+            alt="instagram-new--v1"
+          />
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios-glyphs/30/facebook-new.png"
+            alt="facebook-new"
+          />
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios-filled/50/twitter.png"
+            alt="twitter"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-[3rem] text-center">
+        <p class="text-xs">Copyright © 2023</p>
       </div>
     </div>
-    <div class="relative isolate max-w-screen-xl mx-auto px-6 px-[1rem] pt-14 pb-12 lg:px-8 bg-white">
-      <div class="lg:w-[50%] mx-auto  ">
-        <div class="flex justify-center items-center flex-col gap-[30px] text-center">
-          <h3 class="uppercase text-xl lg:text-4xl md:text-4xl font-serif lg:leading-[60px]  md:leading-[55px]">Working With Passionate Fashion Brands And People.</h3>
-          <button class="uppercase border border-black py-2 px-6 mt-4 hover:bg-black hover:text-white transition ease-in-out">let's talk</button>
-      </div>
-      </div>
-      <div class="flex justify-center lg:justify-between items-center flex-col lg:flex-row mt-[5rem] gap-[50px]">
-        <img
-        width="50"
-        height="50"
-        src="https://img.icons8.com/ios/50/000000/octaedro.png"
-        alt="octaedro"
-      />
-      <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between items-center gap-[20px]">
-        <p class="capitalize"><a href="">home</a></p>
-        <p class="capitalize"><a href="">blog</a></p>
-        <p class="capitalize"><a href="">hacks</a></p>
-        <p class="capitalize"><a href="">videos</a></p>
-        <p class="capitalize"><a href="">Contact</a></p>
-      </div>
-      <div class="flex justify-center lg:justify-between items-center gap-[35px]">
-        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="youtube-play"/>
-        <img width="20" height="20" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
-        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new"/>
-        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/twitter.png" alt="twitter"/>
-      </div>
-    </div>
-    <div class="flex justify-center items-center mt-[3rem] text-center">
-      <p class="text-xs">Copyright © 2023</p>
-
-  </div>
-    </div>
-
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
   </body>
 </html>
