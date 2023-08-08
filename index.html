@@ -57,7 +57,7 @@
             <div class="flex lg:hidden">
               <button
                 type="button"
-                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white open"
               >
                 <span class="sr-only">Open main menu</span>
                 <svg
@@ -97,13 +97,15 @@
                 class="text-sm font-semibold leading-6 text capitalize"
                 >videos</a
               >
-              <a href="contact.html" class="text-sm font-semibold leading-6 capitalize"
+              <a
+                href="contact.html"
+                class="text-sm font-semibold leading-6 capitalize"
                 >Contact</a
               >
             </div>
           </nav>
           <!-- Mobile menu, show/hide based on menu open state. -->
-          <div class="hidden" role="dialog" aria-modal="true">
+          <div class="hidden mobile-menu" role="dialog" aria-modal="true">
             <!-- Background backdrop, show/hide based on slide-over state. -->
             <div class="fixed inset-0 z-50"></div>
             <div
@@ -121,7 +123,7 @@
                 </a>
                 <button
                   type="button"
-                  class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-700 close"
                 >
                   <span class="sr-only">Close menu</span>
                   <svg
@@ -410,7 +412,7 @@
             <button
               class="inline-flex uppercase border border-white py-2 px-6 items-center transition tracking-widest ease-in-out gap-[20px]"
             >
-            subscribe channel
+              subscribe channel
             </button>
           </div>
           <div
@@ -480,7 +482,7 @@
             <button
               class="inline-flex uppercase border border-white py-2 px-6 items-center gap-[20px]"
             >
-             follow on instagram
+              follow on instagram
             </button>
           </div>
         </div>
@@ -500,10 +502,10 @@
           </h3>
           <a href="contact.html">
             <button
-            class="uppercase border border-black py-2 px-6 mt-4 hover:bg-black hover:text-white transition ease-in-out"
-          >
-            let's talk
-          </button>
+              class="uppercase border border-black py-2 px-6 mt-4 hover:bg-black hover:text-white transition ease-in-out"
+            >
+              let's talk
+            </button>
           </a>
         </div>
       </div>
@@ -561,5 +563,17 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+
+    <script>
+      const openNav = document.querySelector(".open")
+      const closeNav = document.querySelector(".close")
+      const mobileWrapper = document.querySelector(".mobile-menu")
+      openNav.addEventListener("click", () =>{
+        mobileWrapper.classList.remove("hidden")
+      })
+      closeNav.addEventListener("click", () =>{
+        mobileWrapper.classList.add("hidden")
+      })
+    </script>
   </body>
 </html>

@@ -47,7 +47,7 @@
         <div class="flex lg:hidden">
           <button
             type="button"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 open"
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -89,7 +89,7 @@
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="hidden" role="dialog" aria-modal="true">
+      <div class="hidden mobile-menu" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-50"></div>
         <div
@@ -105,7 +105,7 @@
                 alt="octaedro"
               />
             </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 close">
               <span class="sr-only">Close menu</span>
               <svg
                 class="h-6 w-6"
@@ -324,5 +324,16 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script>
+      const openNav = document.querySelector(".open")
+      const closeNav = document.querySelector(".close")
+      const mobileWrapper = document.querySelector(".mobile-menu")
+      openNav.addEventListener("click", () =>{
+        mobileWrapper.classList.remove("hidden")
+      })
+      closeNav.addEventListener("click", () =>{
+        mobileWrapper.classList.add("hidden")
+      })
+    </script>
   </body>
 </html>
